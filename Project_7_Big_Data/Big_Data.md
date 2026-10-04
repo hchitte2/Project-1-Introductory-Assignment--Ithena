@@ -4,13 +4,13 @@
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define Big Data | 0.25 hr | — | |
-| 2 | List 5 vendors and their Big Data products | 0.5 hr | — | |
-| 3 | Compare 3 platforms (hardware, database, ETL, front end) | 1 hr | Task 2 | |
-| 4 | Write two detailed use cases | 0.5 hr | Task 1 | |
-| 5 | Analyze the situation: sizing, cost, dashboards, scaling | 1 hr | Task 3 | |
-| 6 | Compile and review | 0.25 hr | Tasks 1–5 | |
-| | **Total** | **3.5 hrs** | | |
+| 1 | Define Big Data | 0.25 hr | — | 5 min |
+| 2 | List 5 vendors and their Big Data products | 0.5 hr | — | 15 min |
+| 3 | Compare 3 platforms (hardware, database, ETL, front end) | 1 hr | Task 2 | 30 min |
+| 4 | Write two detailed use cases | 0.5 hr | Task 1 | 15 min |
+| 5 | Analyze the situation: sizing, cost, dashboards, scaling | 1 hr | Task 3 | 30 min |
+| 6 | Compile and review | 0.25 hr | Tasks 1–5 | 10 min |
+| | **Total** | **3.5 hrs** | | **1 hr 45 min** |
 
 ---
 

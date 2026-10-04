@@ -4,12 +4,12 @@
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define IoT | 0.25 hr | — | |
-| 2 | List the top 5 IoT platform vendors and their platforms | 0.5 hr | — | |
-| 3 | List common features/components of IoT platforms | 0.25 hr | — | |
-| 4 | Pick 3 features and the platform best known for each | 0.25 hr | Tasks 2, 3 | |
-| 5 | Compile and review | 0.25 hr | Tasks 1–4 | |
-| | **Total** | **1.5 hrs** | | |
+| 1 | Define IoT | 0.25 hr | — | 5 min |
+| 2 | List the top 5 IoT platform vendors and their platforms | 0.5 hr | — | 10 min |
+| 3 | List common features/components of IoT platforms | 0.25 hr | — | 5 min |
+| 4 | Pick 3 features and the platform best known for each | 0.25 hr | Tasks 2, 3 | 5 min |
+| 5 | Compile and review | 0.25 hr | Tasks 1–4 | 5 min |
+| | **Total** | **1.5 hrs** | | **30 min** |
 
 Tasks 1, 2, and 3 can run in parallel.
 

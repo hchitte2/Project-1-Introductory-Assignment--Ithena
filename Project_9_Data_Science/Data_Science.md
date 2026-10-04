@@ -4,11 +4,11 @@
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define core ML concepts (Q1–4, Q11) | 0.75 hr | — | |
-| 2 | Explain methods (Q5–7, Q9, Q12) | 0.75 hr | — | |
-| 3 | Scenario questions: feature selection, Euclidean distance code, imputation (Q8, Q10, Q13) | 0.5 hr | Task 1 | |
-| 4 | Compile and review | 0.5 hr | Tasks 1–3 | |
-| | **Total** | **2.5 hrs** | | |
+| 1 | Define core ML concepts (Q1–4, Q11) | 0.75 hr | — | 20 min |
+| 2 | Explain methods (Q5–7, Q9, Q12) | 0.75 hr | — | 20 min |
+| 3 | Scenario questions: feature selection, Euclidean distance code, imputation (Q8, Q10, Q13) | 0.5 hr | Task 1 | 10 min |
+| 4 | Compile and review | 0.5 hr | Tasks 1–3 | 10 min |
+| | **Total** | **2.5 hrs** | | **1 hr** |
 
 ---
 

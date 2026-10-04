@@ -4,10 +4,10 @@
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Identify the 5 main DBMS providers | 0.25 hr | — | |
-| 2 | Research the middleware associated with each provider | 1 hr | Task 1 | |
-| 3 | Document middleware by provider and review | 0.25 hr | Task 2 | |
-| | **Total** | **1.5 hrs** | | |
+| 1 | Identify the 5 main DBMS providers | 0.25 hr | — | 5 min |
+| 2 | Research the middleware associated with each provider | 1 hr | Task 1 | 20 min |
+| 3 | Document middleware by provider and review | 0.25 hr | Task 2 | 5 min |
+| | **Total** | **1.5 hrs** | | **30 min** |
 
 **Middleware** is software that sits between applications and databases so they can talk to each other without knowing each database's internals. In a DBMS setting it usually does one of these jobs:
 
