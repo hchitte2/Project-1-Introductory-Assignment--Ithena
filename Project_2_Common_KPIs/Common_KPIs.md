@@ -4,10 +4,10 @@
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Identify 5 common components of a company | 0.5 hr | — | |
-| 2 | Research 5 KPIs per component (25 total) | 2 hrs | Task 1 | |
-| 3 | Document KPIs with formulas and review | 1 hr | Task 2 | |
-| | **Total** | **3.5 hrs** | | |
+| 1 | Identify 5 common components of a company | 0.25 hr | — | 5 min |
+| 2 | Research 5 KPIs per component (25 total) | 1 hr | Task 1 | 20 min |
+| 3 | Document KPIs with formulas and review | 0.25 hr | Task 2 | 5 min |
+| | **Total** | **1.5 hrs** | | **30 min** |
 
 **KPI (Key Performance Indicator):** a measurable value that shows how well a part of the business is meeting its goals.
 

@@ -4,13 +4,13 @@
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Describe the requirements gathering process | 1 hr | — | |
-| 2 | List common key assumptions | 0.5 hr | Task 1 | |
-| 3 | Functional vs. technical requirements, with 4 examples of each | 1 hr | Task 1 | |
-| 4 | Define gap analysis | 0.5 hr | — | |
-| 5 | List key properties of the final deliverable | 0.5 hr | Task 1 | |
-| 6 | Compile and review | 0.5 hr | Tasks 1–5 | |
-| | **Total** | **4 hrs** | | |
+| 1 | Describe the requirements gathering process | 0.5 hr | — | 10 min |
+| 2 | List common key assumptions | 0.25 hr | Task 1 | 5 min |
+| 3 | Functional vs. technical requirements, with 4 examples of each | 0.5 hr | Task 1 | 10 min |
+| 4 | Define gap analysis | 0.25 hr | — | 5 min |
+| 5 | List key properties of the final deliverable | 0.25 hr | Task 1 | 5 min |
+| 6 | Compile and review | 0.25 hr | Tasks 1–5 | 10 min |
+| | **Total** | **2 hrs** | | **45 min** |
 
 ---
 
