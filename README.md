@@ -1,6 +1,25 @@
 # Project-1-Introductory-Assignment--Ithena
 Here is a detailed step-by-step task plan for each project outlined in the introductory assignment document:
 
+## Overall Timeline
+
+Estimated total: **~52 hours, about 8 working days**. Record each project's actual time in its plan table.
+
+| Day | Project | Type | Estimated time | Actual time |
+|-----|---------|------|----------------|-------------|
+| 1 | [1. Common Terms, Vendors, and Products](Project_1_Common_Terms/Common_Terms_Vendors_Products.md) | Research | 6.5 hrs | |
+| 2 | [2. Common KPIs](Project_2_Common_KPIs/Common_KPIs.md) | Research | 3.5 hrs | |
+| 2 | [3. DBMS Middleware](Project_3_DBMS_Middleware/DBMS_Middleware.md) | Research | 3.5 hrs | |
+| 3 | [4. Internet of Things](Project_4_IoT/IoT.md) | Research | 3.5 hrs | |
+| 3 | [6. Requirements Gathering](Project_6_Requirements_Gathering/Requirements_Gathering.md) | Research | 4 hrs | |
+| 4 | [7. Big Data](Project_7_Big_Data/Big_Data.md) | Research + sizing | 7 hrs | |
+| 5–6 | [5. JSP Login Page](Project_5_JSP_Login/) | Code (Java, Tomcat, SQL) | 13.5 hrs | |
+| 7 | [8. API](Project_8_API/API_Concepts.md) | Theory + code (Node.js) | 5.75 hrs | |
+| 8 | [9. Data Science](Project_9_Data_Science/Data_Science.md) | Theory + Python | 4.5 hrs | |
+| | **Total** | | **51.75 hrs** | |
+
+Projects 5 and 8 include automated tests that run on every push through GitHub Actions ([ci.yml](.github/workflows/ci.yml)).
+
 ## Project One: Common Terms, Vendors, and Products
 
 * **Task 1:** Research and write definitions for the six specified terms: ERP, Server Hardware, Database/DBMS, ETL, BI, and Mobility.
