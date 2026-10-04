@@ -1,0 +1,4 @@
+<aside class="brand">
+  <a class="wordmark" href="${ctx}/login">Member Portal</a>
+  <p class="brand-line">Your profile and account details, in one secure place.</p>
+</aside>
