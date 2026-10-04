@@ -1,0 +1,201 @@
+:root {
+  --bg: #eaf0f4;
+  --surface: #ffffff;
+  --ink: #15202b;
+  --muted: #566573;
+  --line: #cfd9e1;
+  --accent: #1f4f9c;
+  --accent-ink: #ffffff;
+  --error: #a3262a;
+  --tube: #dde5ec;
+  /* --temp-color is set per reading by app.js (cold blue -> hot red) */
+  --temp-color: var(--accent);
+
+  --font-ui: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-figure: "Big Shoulders Display", "Arial Narrow", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1820;
+    --surface: #17222c;
+    --ink: #e7eef4;
+    --muted: #9aabb9;
+    --line: #2a3a47;
+    --accent: #7fb0ff;
+    --accent-ink: #0f1820;
+    --error: #ff8f8a;
+    --tube: #23313d;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1rem/1.5 var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 3.5rem 1rem 4rem;
+}
+
+h1 {
+  margin: 0;
+  font: 800 2.75rem/1 var(--font-figure);
+  letter-spacing: 0.01em;
+}
+
+.lede {
+  margin: 0.5rem 0 2rem;
+  color: var(--muted);
+}
+
+/* Search */
+.search label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.search-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input,
+button {
+  font: inherit;
+  border-radius: 6px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem 0.875rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+button {
+  padding: 0.75rem 1.125rem;
+  border: 0;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.6; cursor: progress; }
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Result */
+.result { margin-top: 2.5rem; }
+
+.empty { color: var(--muted); }
+
+.error {
+  margin: 0;
+  padding: 0.875rem 1rem;
+  border-left: 4px solid var(--error);
+  background: var(--surface);
+  color: var(--error);
+}
+
+.reading {
+  display: grid;
+  grid-template-columns: 1.25rem 1fr;
+  gap: 1.5rem;
+  padding: 1.75rem 1.5rem;
+  background: var(--surface);
+  border-radius: 10px;
+}
+
+/* The one bold element: a mercury column filled to the reading, coloured by temperature. */
+.thermometer {
+  position: relative;
+  width: 0.75rem;
+  margin: 0.25rem auto;
+  border-radius: 999px;
+  background: var(--tube);
+  overflow: hidden;
+}
+
+.mercury {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: var(--fill, 0%);
+  background: var(--temp-color);
+  border-radius: 999px;
+  transition: height 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.place {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.temp {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-figure);
+  line-height: 0.9;
+  color: var(--temp-color);
+}
+
+.temp .value {
+  font-size: clamp(5.5rem, 22vw, 8rem);
+  font-weight: 800;
+}
+
+.temp .unit {
+  font-size: 2.25rem;
+  font-weight: 500;
+  vertical-align: top;
+  margin-left: 0.125rem;
+}
+
+.summary {
+  margin: 0.75rem 0 1.25rem;
+  font-size: 1.0625rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  gap: 0.5rem 2rem;
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.facts dt { color: var(--muted); font-size: 0.8125rem; }
+.facts dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.observed {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 30rem) {
+  .search-row { flex-direction: column; }
+  .facts { grid-template-columns: repeat(2, auto); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mercury { transition: none; }
+}
