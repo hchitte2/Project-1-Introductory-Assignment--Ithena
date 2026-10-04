@@ -29,30 +29,41 @@ export async function getCurrentWeather(city, { apiKey, baseUrl = DEFAULT_BASE_U
     throw new WeatherError('Could not reach OpenWeatherMap. Check your connection and try again.', 502);
   }
 
-  if (response.status === 404) {
-    throw new WeatherError(`No city named "${city}" was found. Check the spelling, or add a country code (e.g. "Paris, FR").`, 404);
-  }
-  if (response.status === 401) {
-    throw new WeatherError('OpenWeatherMap rejected the API key. New keys can take up to 2 hours to activate.', 502);
-  }
-  if (response.status === 429) {
-    throw new WeatherError('OpenWeatherMap rate limit reached. Wait a minute and try again.', 503);
-  }
   if (!response.ok) {
-    throw new WeatherError(`OpenWeatherMap returned an error (HTTP ${response.status}).`, 502);
+    // Discard the body: an unread response keeps its pooled connection busy until garbage collection.
+    await response.body?.cancel().catch(() => {});
+    throw upstreamError(response.status, city);
   }
 
-  const data = await response.json();
-  return {
-    city: data.name,
-    country: data.sys?.country ?? '',
-    temperature: data.main.temp,
-    feelsLike: data.main.feels_like,
-    tempMin: data.main.temp_min,
-    tempMax: data.main.temp_max,
-    humidity: data.main.humidity,
-    windSpeed: data.wind?.speed ?? null,
-    description: data.weather?.[0]?.description ?? '',
-    observedAt: new Date(data.dt * 1000).toISOString(),
-  };
+  try {
+    const data = await response.json();
+    return {
+      city: data.name,
+      country: data.sys?.country ?? '',
+      temperature: data.main.temp,
+      feelsLike: data.main.feels_like,
+      tempMin: data.main.temp_min,
+      tempMax: data.main.temp_max,
+      humidity: data.main.humidity,
+      windSpeed: data.wind?.speed ?? null,
+      description: data.weather?.[0]?.description ?? '',
+      observedAt: new Date(data.dt * 1000).toISOString(),
+    };
+  } catch {
+    // Not JSON (e.g. a proxy error page) or not the shape we expect.
+    throw new WeatherError('OpenWeatherMap sent an unexpected response. Try again in a moment.', 502);
+  }
+}
+
+function upstreamError(status, city) {
+  if (status === 404) {
+    return new WeatherError(`No city named "${city}" was found. Check the spelling, or add a country code (e.g. "Paris, FR").`, 404);
+  }
+  if (status === 401) {
+    return new WeatherError('OpenWeatherMap rejected the API key. New keys can take up to 2 hours to activate.', 502);
+  }
+  if (status === 429) {
+    return new WeatherError('OpenWeatherMap rate limit reached. Wait a minute and try again.', 503);
+  }
+  return new WeatherError(`OpenWeatherMap returned an error (HTTP ${status}).`, 502);
 }
