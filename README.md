@@ -108,6 +108,22 @@ Tasks 1, 2, and 3 can run in parallel. Deliverable: [Project_4_IoT/IoT.md](Proje
 
 * **Task 5:** Implement JDBC connectivity to validate login credentials against the database and set up error/confirmation handling across a cohesive UI theme.
 
+**Chosen: Option A (JSP Login Page).** Option B needs the X (Twitter) API, and reading tweets now requires a paid plan.
+
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Set up the environment (JDK, Maven, Tomcat) | 1 hr | — | |
+| 2 | Create the users table (SQL) and JDBC connection | 1 hr | Task 1 | |
+| 3 | Login page and credential check | 2 hrs | Task 2 | |
+| 4 | Registration page (5+ inputs, including photo) and confirmation page | 3 hrs | Task 2 | |
+| 5 | Forgot-password page | 1.5 hrs | Task 2 | |
+| 6 | Landing page (date, welcome, photo) and logout | 1.5 hrs | Task 3 | |
+| 7 | Errors, confirmations, and a consistent theme across all pages | 2 hrs | Tasks 3–6 | |
+| 8 | Tests, README, and review | 1.5 hrs | Tasks 3–7 | |
+| | **Total** | **13.5 hrs** | | |
+
+Deliverable: [Project_5_JSP_Login/](Project_5_JSP_Login/) (see its README to run)
+
 
 
 **Option B: Twitter Comparison**
