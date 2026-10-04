@@ -194,3 +194,13 @@ Deliverable: [Project_6_Requirements_Gathering/Requirements_Gathering.md](Projec
 
 
 * **Task 3:** Answer the specific scenario questions: explain two feature selection techniques as if to a 5-year-old, calculate Euclidean distance in Python for the given plots, and identify the correct ML algorithm for imputing missing values.
+
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Define core ML concepts | 1.5 hrs | — | |
+| 2 | Explain methods | 1.5 hrs | — | |
+| 3 | Scenario questions: feature selection, Euclidean distance code, imputation | 1 hr | Task 1 | |
+| 4 | Compile and review | 0.5 hr | Tasks 1–3 | |
+| | **Total** | **4.5 hrs** | | |
+
+Deliverable: [Project_9_Data_Science/Data_Science.md](Project_9_Data_Science/Data_Science.md) (code: [euclidean_distance.py](Project_9_Data_Science/euclidean_distance.py))
