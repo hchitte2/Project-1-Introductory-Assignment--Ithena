@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  jsp-login:
+    name: Project 5 - JSP Login (Maven)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Project_5_JSP_Login
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - run: ./mvnw -B verify
+
+  weather-app:
+    name: Project 8 - Weather app (Node)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Project_8_API/weather-app
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: Project_8_API/weather-app/package-lock.json
+      - run: npm ci
+      - run: npm test
+
+  data-science:
+    name: Project 9 - Euclidean distance script
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 Project_9_Data_Science/euclidean_distance.py
