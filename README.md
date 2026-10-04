@@ -34,6 +34,15 @@ Tasks 1 and 2 can run in parallel. Deliverable: [Project_1_Common_Terms/Common_T
 
 * **Task 3:** Document the 25 total KPIs organized by their respective business components.
 
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Identify 5 common components of a company | 0.5 hr | — | |
+| 2 | Research 5 KPIs per component (25 total) | 2 hrs | Task 1 | |
+| 3 | Document KPIs with formulas and review | 1 hr | Task 2 | |
+| | **Total** | **3.5 hrs** | | |
+
+Deliverable: [Project_2_Common_KPIs/Common_KPIs.md](Project_2_Common_KPIs/Common_KPIs.md)
+
 ## Project Three: DBMS Middleware
 
 * **Task 1:** Identify the 5 main database management software (DBMS) providers.
