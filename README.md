@@ -195,6 +195,20 @@ Deliverable: [Project_7_Big_Data/Big_Data.md](Project_7_Big_Data/Big_Data.md)
 
 * **Task 4:** Render the backend API results on a simple web page.
 
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Explain REST and RESTful | 0.5 hr | — | |
+| 2 | Explain the architectural style for web APIs | 0.5 hr | Task 1 | |
+| 3 | List the HTTP methods REST uses | 0.5 hr | Task 1 | |
+| 4 | Compare SOAP and REST | 0.5 hr | Task 1 | |
+| 5 | Sign up for an OpenWeatherMap API key | 0.25 hr | — | |
+| 6 | Build the backend that calls OpenWeatherMap | 1.5 hrs | Task 5 | |
+| 7 | Build the web page that shows the result | 1 hr | Task 6 | |
+| 8 | Tests, README, and review | 1 hr | Tasks 6, 7 | |
+| | **Total** | **5.75 hrs** | | |
+
+Deliverables: [Project_8_API/API_Concepts.md](Project_8_API/API_Concepts.md) (theory) and [Project_8_API/weather-app/](Project_8_API/weather-app/) (app; see its README to run)
+
 
 
 ## Project Nine: Data Science
