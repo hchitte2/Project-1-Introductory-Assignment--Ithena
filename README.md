@@ -1,6 +1,23 @@
 # Project-1-Introductory-Assignment--Ithena
 Here is a detailed step-by-step task plan for each project outlined in the introductory assignment document:
 
+## Overall Timeline
+
+Estimated total: **26 hours over 3.5 working days.** Actual time is recorded in each project's plan table as the project is completed.
+
+| Day | Project | Type | Estimated time | Actual time |
+|-----|---------|------|----------------|-------------|
+| 1 | [1. Common Terms, Vendors, and Products](Project_1_Common_Terms/Common_Terms_Vendors_Products.md) | Research | 3 hrs | |
+| 1 | [2. Common KPIs](Project_2_Common_KPIs/Common_KPIs.md) | Research | 1.5 hrs | |
+| 1 | [3. DBMS Middleware](Project_3_DBMS_Middleware/DBMS_Middleware.md) | Research | 1.5 hrs | |
+| 1 | [4. Internet of Things](Project_4_IoT/IoT.md) | Research | 1.5 hrs | |
+| 2 | [6. Requirements Gathering](Project_6_Requirements_Gathering/Requirements_Gathering.md) | Research | 2 hrs | |
+| 2 | [7. Big Data](Project_7_Big_Data/Big_Data.md) | Research + sizing | 3.5 hrs | |
+| 2 | [9. Data Science](Project_9_Data_Science/Data_Science.md) | Theory + Python | 2.5 hrs | |
+| 3 | 5. JSP Login Page | Code (Java, Tomcat, SQL) | 7 hrs | |
+| 4 (half day) | 8. API | Theory + code (Node.js) | 3.5 hrs | |
+| | **Total** | | **26 hrs** | |
+
 ## Project One: Common Terms, Vendors, and Products
 
 * **Task 1:** Research and write definitions for the six specified terms: ERP, Server Hardware, Database/DBMS, ETL, BI, and Mobility.
@@ -16,11 +33,11 @@ Here is a detailed step-by-step task plan for each project outlined in the intro
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define the 6 terms | 1.5 hrs | — | |
-| 2 | Identify top 5 vendors per term (30 total) | 2 hrs | — | |
-| 3 | Identify top 2 products per vendor (60 total) | 2 hrs | Task 2 | |
-| 4 | Compile, format, and review the document | 1 hr | Tasks 1, 2, 3 | |
-| | **Total** | **6.5 hrs** | | |
+| 1 | Define the 6 terms | 0.75 hr | — | |
+| 2 | Identify top 5 vendors per term (30 total) | 1 hr | — | |
+| 3 | Identify top 2 products per vendor (60 total) | 0.75 hr | Task 2 | |
+| 4 | Compile, format, and review the document | 0.5 hr | Tasks 1, 2, 3 | |
+| | **Total** | **3 hrs** | | |
 
 Tasks 1 and 2 can run in parallel. Deliverable: [Project_1_Common_Terms/Common_Terms_Vendors_Products.md](Project_1_Common_Terms/Common_Terms_Vendors_Products.md)
 
@@ -36,10 +53,10 @@ Tasks 1 and 2 can run in parallel. Deliverable: [Project_1_Common_Terms/Common_T
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Identify 5 common components of a company | 0.5 hr | — | |
-| 2 | Research 5 KPIs per component (25 total) | 2 hrs | Task 1 | |
-| 3 | Document KPIs with formulas and review | 1 hr | Task 2 | |
-| | **Total** | **3.5 hrs** | | |
+| 1 | Identify 5 common components of a company | 0.25 hr | — | |
+| 2 | Research 5 KPIs per component (25 total) | 1 hr | Task 1 | |
+| 3 | Document KPIs with formulas and review | 0.25 hr | Task 2 | |
+| | **Total** | **1.5 hrs** | | |
 
 Deliverable: [Project_2_Common_KPIs/Common_KPIs.md](Project_2_Common_KPIs/Common_KPIs.md)
 
@@ -55,10 +72,10 @@ Deliverable: [Project_2_Common_KPIs/Common_KPIs.md](Project_2_Common_KPIs/Common
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Identify the 5 main DBMS providers | 0.5 hr | — | |
-| 2 | Research the middleware associated with each provider | 2 hrs | Task 1 | |
-| 3 | Document middleware by provider and review | 1 hr | Task 2 | |
-| | **Total** | **3.5 hrs** | | |
+| 1 | Identify the 5 main DBMS providers | 0.25 hr | — | |
+| 2 | Research the middleware associated with each provider | 1 hr | Task 1 | |
+| 3 | Document middleware by provider and review | 0.25 hr | Task 2 | |
+| | **Total** | **1.5 hrs** | | |
 
 Deliverable: [Project_3_DBMS_Middleware/DBMS_Middleware.md](Project_3_DBMS_Middleware/DBMS_Middleware.md)
 
@@ -77,12 +94,12 @@ Deliverable: [Project_3_DBMS_Middleware/DBMS_Middleware.md](Project_3_DBMS_Middl
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define IoT | 0.5 hr | — | |
-| 2 | List the top 5 IoT platform vendors and their platforms | 1 hr | — | |
-| 3 | List common features/components of IoT platforms | 1 hr | — | |
-| 4 | Pick 3 features and the platform best known for each | 0.5 hr | Tasks 2, 3 | |
-| 5 | Compile and review | 0.5 hr | Tasks 1–4 | |
-| | **Total** | **3.5 hrs** | | |
+| 1 | Define IoT | 0.25 hr | — | |
+| 2 | List the top 5 IoT platform vendors and their platforms | 0.5 hr | — | |
+| 3 | List common features/components of IoT platforms | 0.25 hr | — | |
+| 4 | Pick 3 features and the platform best known for each | 0.25 hr | Tasks 2, 3 | |
+| 5 | Compile and review | 0.25 hr | Tasks 1–4 | |
+| | **Total** | **1.5 hrs** | | |
 
 Tasks 1, 2, and 3 can run in parallel. Deliverable: [Project_4_IoT/IoT.md](Project_4_IoT/IoT.md)
 
@@ -143,13 +160,13 @@ Tasks 1, 2, and 3 can run in parallel. Deliverable: [Project_4_IoT/IoT.md](Proje
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Describe the requirements gathering process | 1 hr | — | |
-| 2 | List common key assumptions | 0.5 hr | Task 1 | |
-| 3 | Functional vs. technical requirements, with 4 examples of each | 1 hr | Task 1 | |
-| 4 | Define gap analysis | 0.5 hr | — | |
-| 5 | List key properties of the final deliverable | 0.5 hr | Task 1 | |
-| 6 | Compile and review | 0.5 hr | Tasks 1–5 | |
-| | **Total** | **4 hrs** | | |
+| 1 | Describe the requirements gathering process | 0.5 hr | — | |
+| 2 | List common key assumptions | 0.25 hr | Task 1 | |
+| 3 | Functional vs. technical requirements, with 4 examples of each | 0.5 hr | Task 1 | |
+| 4 | Define gap analysis | 0.25 hr | — | |
+| 5 | List key properties of the final deliverable | 0.25 hr | Task 1 | |
+| 6 | Compile and review | 0.25 hr | Tasks 1–5 | |
+| | **Total** | **2 hrs** | | |
 
 Deliverable: [Project_6_Requirements_Gathering/Requirements_Gathering.md](Project_6_Requirements_Gathering/Requirements_Gathering.md)
 
@@ -170,13 +187,13 @@ Deliverable: [Project_6_Requirements_Gathering/Requirements_Gathering.md](Projec
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define Big Data | 0.5 hr | — | |
-| 2 | List 5 vendors and their Big Data products | 1 hr | — | |
-| 3 | Compare 3 platforms (hardware, database, ETL, front end) | 2 hrs | Task 2 | |
-| 4 | Write two detailed use cases | 1 hr | Task 1 | |
-| 5 | Analyze the situation: sizing, cost, dashboards, scaling | 2 hrs | Task 3 | |
-| 6 | Compile and review | 0.5 hr | Tasks 1–5 | |
-| | **Total** | **7 hrs** | | |
+| 1 | Define Big Data | 0.25 hr | — | |
+| 2 | List 5 vendors and their Big Data products | 0.5 hr | — | |
+| 3 | Compare 3 platforms (hardware, database, ETL, front end) | 1 hr | Task 2 | |
+| 4 | Write two detailed use cases | 0.5 hr | Task 1 | |
+| 5 | Analyze the situation: sizing, cost, dashboards, scaling | 1 hr | Task 3 | |
+| 6 | Compile and review | 0.25 hr | Tasks 1–5 | |
+| | **Total** | **3.5 hrs** | | |
 
 Deliverable: [Project_7_Big_Data/Big_Data.md](Project_7_Big_Data/Big_Data.md)
 
@@ -209,10 +226,10 @@ Deliverable: [Project_7_Big_Data/Big_Data.md](Project_7_Big_Data/Big_Data.md)
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define core ML concepts | 1.5 hrs | — | |
-| 2 | Explain methods | 1.5 hrs | — | |
-| 3 | Scenario questions: feature selection, Euclidean distance code, imputation | 1 hr | Task 1 | |
+| 1 | Define core ML concepts | 0.75 hr | — | |
+| 2 | Explain methods | 0.75 hr | — | |
+| 3 | Scenario questions: feature selection, Euclidean distance code, imputation | 0.5 hr | Task 1 | |
 | 4 | Compile and review | 0.5 hr | Tasks 1–3 | |
-| | **Total** | **4.5 hrs** | | |
+| | **Total** | **2.5 hrs** | | |
 
 Deliverable: [Project_9_Data_Science/Data_Science.md](Project_9_Data_Science/Data_Science.md) (code: [euclidean_distance.py](Project_9_Data_Science/euclidean_distance.py))

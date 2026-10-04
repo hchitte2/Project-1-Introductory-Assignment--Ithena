@@ -4,11 +4,11 @@
 
 | # | Task | Estimated time | Depends on | Actual time |
 |---|------|----------------|------------|-------------|
-| 1 | Define the 6 terms | 1.5 hrs | — | |
-| 2 | Identify top 5 vendors per term (30 total) | 2 hrs | — | |
-| 3 | Identify top 2 products per vendor (60 total) | 2 hrs | Task 2 | |
-| 4 | Compile, format, and review the document | 1 hr | Tasks 1, 2, 3 | |
-| | **Total** | **6.5 hrs** | | |
+| 1 | Define the 6 terms | 0.75 hr | — | |
+| 2 | Identify top 5 vendors per term (30 total) | 1 hr | — | |
+| 3 | Identify top 2 products per vendor (60 total) | 0.75 hr | Task 2 | |
+| 4 | Compile, format, and review the document | 0.5 hr | Tasks 1, 2, 3 | |
+| | **Total** | **3 hrs** | | |
 
 **How "top" was decided:** vendors were ranked by market share and by their position in industry analyst reports (Gartner Magic Quadrants, IDC market trackers). Products are each vendor's flagship or most widely adopted offerings in that category.
 
