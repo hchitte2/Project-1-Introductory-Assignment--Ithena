@@ -141,6 +141,18 @@ Tasks 1, 2, and 3 can run in parallel. Deliverable: [Project_4_IoT/IoT.md](Proje
 
 * **Task 4:** Define "gap analysis" and document the key properties required for the final requirements deliverable.
 
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Describe the requirements gathering process | 1 hr | — | |
+| 2 | List common key assumptions | 0.5 hr | Task 1 | |
+| 3 | Functional vs. technical requirements, with 4 examples of each | 1 hr | Task 1 | |
+| 4 | Define gap analysis | 0.5 hr | — | |
+| 5 | List key properties of the final deliverable | 0.5 hr | Task 1 | |
+| 6 | Compile and review | 0.5 hr | Tasks 1–5 | |
+| | **Total** | **4 hrs** | | |
+
+Deliverable: [Project_6_Requirements_Gathering/Requirements_Gathering.md](Project_6_Requirements_Gathering/Requirements_Gathering.md)
+
 
 
 ## Project Seven: Big Data
