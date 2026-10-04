@@ -58,3 +58,27 @@ test('reports a 502 when OpenWeatherMap cannot be reached', async () => {
   };
   await assert.rejects(getCurrentWeather('London', { apiKey: 'k', fetchImpl }), { status: 502 });
 });
+
+test('releases the upstream connection when OpenWeatherMap returns an error', async () => {
+  let cancelled = false;
+  const body = new ReadableStream({ cancel() { cancelled = true; } });
+  const fetchImpl = async () => new Response(body, { status: 404 });
+  await assert.rejects(getCurrentWeather('Atlantis', { apiKey: 'k', fetchImpl }), { status: 404 });
+  assert.equal(cancelled, true);
+});
+
+test('reports a 502 when OpenWeatherMap sends something other than weather JSON', async (t) => {
+  const bodies = {
+    'an HTML page': '<html>Captive portal</html>',
+    'JSON without weather fields': '{"cod":200}',
+  };
+  for (const [name, text] of Object.entries(bodies)) {
+    await t.test(name, async () => {
+      const fetchImpl = async () => new Response(text, { status: 200 });
+      await assert.rejects(getCurrentWeather('London', { apiKey: 'k', fetchImpl }), {
+        status: 502,
+        message: /unexpected response/,
+      });
+    });
+  }
+});

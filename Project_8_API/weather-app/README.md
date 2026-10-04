@@ -44,13 +44,15 @@ Requires Node.js 22.9 or later.
 }
 ```
 
+`tempMin`/`tempMax` are the spread of temperatures being observed across the city right now (as OpenWeatherMap defines them), not the day's forecast low/high.
+
 | Status | When |
 |--------|------|
 | 200 | Weather found |
 | 400 | City missing or longer than 100 characters |
 | 404 | OpenWeatherMap does not know the city |
 | 500 | `OPENWEATHER_API_KEY` is not set |
-| 502 / 503 | OpenWeatherMap is unreachable, rejected the key, or rate-limited the request |
+| 502 / 503 | OpenWeatherMap is unreachable, rejected the key, rate-limited the request, or sent an unexpected response |
 
 Errors are returned as `{ "error": "message" }`.
 
