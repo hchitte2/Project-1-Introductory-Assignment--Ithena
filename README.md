@@ -75,6 +75,17 @@ Deliverable: [Project_3_DBMS_Middleware/DBMS_Middleware.md](Project_3_DBMS_Middl
 
 * **Task 4:** Select three specific platform features/components and identify the single IoT platform that is best known for each one.
 
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Define IoT | 0.5 hr | — | |
+| 2 | List the top 5 IoT platform vendors and their platforms | 1 hr | — | |
+| 3 | List common features/components of IoT platforms | 1 hr | — | |
+| 4 | Pick 3 features and the platform best known for each | 0.5 hr | Tasks 2, 3 | |
+| 5 | Compile and review | 0.5 hr | Tasks 1–4 | |
+| | **Total** | **3.5 hrs** | | |
+
+Tasks 1, 2, and 3 can run in parallel. Deliverable: [Project_4_IoT/IoT.md](Project_4_IoT/IoT.md)
+
 
 
 ## Project Five: JSP Login Page OR Twitter Comparison
