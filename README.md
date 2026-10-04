@@ -233,3 +233,29 @@ Deliverable: [Project_7_Big_Data/Big_Data.md](Project_7_Big_Data/Big_Data.md)
 | | **Total** | **2.5 hrs** | | **1 hr** |
 
 Deliverable: [Project_9_Data_Science/Data_Science.md](Project_9_Data_Science/Data_Science.md) (code: [euclidean_distance.py](Project_9_Data_Science/euclidean_distance.py))
+
+
+## How I Used AI
+
+I completed this assignment with **Claude Code**, Anthropic's AI coding assistant, working as a pair programmer.
+
+| Step | Me | Claude Code |
+|------|----|-------------|
+| Planning | Broke each project into tasks and set the 26-hour plan | Suggested task breakdowns |
+| Scope | Chose the level of detail (short, focused theory documents) and which Project 5 option to build | Explained the trade-offs |
+| Writing and code | Reviewed and approved the results | Drafted the documents, code, and tests |
+| Quality checks | Decided what had to be verified | Ran the unit tests, tested every page in a real browser, and ran an independent code review that found 4 bugs (all fixed before submission) |
+
+AI output was checked, not taken on trust: every coding project has automated tests, and each fix was verified before it was committed.
+
+### How I keep learning with Claude
+
+I've set up these Claude Code skills (from [Matt Pocock's open-source collection](https://github.com/mattpocock/skills/tree/main/skills/productivity)) to use Claude for learning, not just for answers:
+
+| Skill | What I use it for |
+|-------|-------------------|
+| `/teach` | Short lessons with quizzes on a topic I'm learning, with a record of what I've mastered |
+| `/grill-me` | Having my plan questioned until every decision is settled, before I start building |
+| `/handoff` | Summarizing a session so I can pick the work up the next day |
+| `/to-questionnaire` | Turning open questions into a short questionnaire for the person who can answer them |
+| `/wait-what` | Getting an explanation re-pitched in plain language when it doesn't land |
