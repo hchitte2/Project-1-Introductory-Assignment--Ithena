@@ -38,6 +38,22 @@ class ValidatorTest {
     }
 
     @Test
+    void acceptsNamesWithCombiningMarksAccentsAndCurlyApostrophes() {
+        String[][] names = {
+            {"प्रिया", "शर्मा"},            // Devanagari uses combining vowel signs (\p{M})
+            {"Siobhán", "O\u2019Brien"},   // curly apostrophe, as typed by iOS smart punctuation
+            {"Jose\u0301", "Núñez"},       // "José" in decomposed (NFD) form
+            {"Mary-Jane", "St. John"},
+        };
+        for (String[] n : names) {
+            Registration r = new Registration(n[0], n[1], "ada@example.com", "1990-12-10",
+                    "ada.l", "engine1843", "engine1843", TestImages.png());
+            assertTrue(Validator.validateRegistration(r).isEmpty(), n[0] + " " + n[1]);
+        }
+        assertEquals("Jos\u00e9", Validator.normalizeName(" Jose\u0301 "));
+    }
+
+    @Test
     void dateOfBirthMustBeInThePast() {
         String tomorrow = LocalDate.now().plusDays(1).toString();
         Registration r = new Registration("Ada", "Lovelace", "ada@example.com", tomorrow,

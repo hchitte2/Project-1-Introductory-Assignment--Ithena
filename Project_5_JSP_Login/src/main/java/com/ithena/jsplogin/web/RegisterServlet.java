@@ -34,6 +34,9 @@ public class RegisterServlet extends AppServlet {
             redirect(req, resp, "/home");
             return;
         }
+        if (req.getParameter("photoTooLarge") != null) {
+            req.setAttribute("errors", Map.of("photo", "That photo is larger than 2 MB. Choose a smaller one and fill in the form again."));
+        }
         render(req, resp, "register");
     }
 
@@ -43,8 +46,9 @@ public class RegisterServlet extends AppServlet {
         try {
             photo = readPhoto(req.getPart("photo"));
         } catch (IllegalStateException e) {
-            // The upload exceeded the container limit in @MultipartConfig.
-            showErrors(req, resp, Map.of("photo", "Photo must be 2 MB or smaller."));
+            // The upload exceeded the container limit in @MultipartConfig. Tomcat now rethrows on every
+            // getParameter() for this request, so redirect instead of re-rendering the form here.
+            redirect(req, resp, "/register?photoTooLarge");
             return;
         }
 
@@ -69,8 +73,8 @@ public class RegisterServlet extends AppServlet {
                 return;
             }
 
-            String firstName = form.firstName().trim();
-            String lastName = form.lastName().trim();
+            String firstName = Validator.normalizeName(form.firstName());
+            String lastName = Validator.normalizeName(form.lastName());
             LocalDate dateOfBirth = Validator.parseDate(form.dateOfBirth()).orElseThrow();
             String photoType = ImageTypes.detect(photo).orElseThrow();
             userDao().create(userId, firstName, lastName, email, dateOfBirth,

@@ -1,6 +1,7 @@
 package com.ithena.jsplogin.validation;
 
 import com.ithena.jsplogin.model.Registration;
+import java.text.Normalizer;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.LinkedHashMap;
@@ -13,7 +14,8 @@ public final class Validator {
 
     public static final int MAX_PHOTO_BYTES = 2 * 1024 * 1024;
 
-    private static final Pattern NAME = Pattern.compile("^\\p{L}[\\p{L} .'-]{0,49}$");
+    // Letters plus combining marks (\p{M}), needed for scripts such as Devanagari, and straight or curly apostrophes.
+    private static final Pattern NAME = Pattern.compile("^\\p{L}[\\p{L}\\p{M} .'\u2019-]{0,49}$");
     private static final Pattern EMAIL = Pattern.compile("^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$");
     private static final Pattern USER_ID = Pattern.compile("^[A-Za-z0-9._-]{3,20}$");
     private static final LocalDate EARLIEST_DOB = LocalDate.of(1900, 1, 1);
@@ -26,13 +28,13 @@ public final class Validator {
 
         if (blank(r.firstName())) {
             errors.put("firstName", "Enter your first name.");
-        } else if (!NAME.matcher(r.firstName().trim()).matches()) {
+        } else if (!NAME.matcher(normalizeName(r.firstName())).matches()) {
             errors.put("firstName", "First name can use letters, spaces, hyphens, and apostrophes (up to 50).");
         }
 
         if (blank(r.lastName())) {
             errors.put("lastName", "Enter your last name.");
-        } else if (!NAME.matcher(r.lastName().trim()).matches()) {
+        } else if (!NAME.matcher(normalizeName(r.lastName())).matches()) {
             errors.put("lastName", "Last name can use letters, spaces, hyphens, and apostrophes (up to 50).");
         }
 
@@ -87,6 +89,11 @@ public final class Validator {
         } catch (DateTimeParseException e) {
             return Optional.empty();
         }
+    }
+
+    /** Trims and converts to Unicode NFC, so "José" typed as e + combining accent is stored as one form. */
+    public static String normalizeName(String name) {
+        return name == null ? "" : Normalizer.normalize(name.trim(), Normalizer.Form.NFC);
     }
 
     public static String normalizeUserId(String userId) {

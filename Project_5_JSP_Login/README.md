@@ -112,4 +112,4 @@ A production deployment would also add HTTPS, a pooled JNDI DataSource, emailed 
 ./mvnw test
 ```
 
-18 JUnit tests cover password hashing, form validation, image detection, and every DAO query (against an in-memory H2 database using the real `schema.sql`). Every page flow was also tested end-to-end in a browser on Tomcat 11.
+19 JUnit tests cover password hashing, form validation, image detection, and every DAO query (against an in-memory H2 database using the real `schema.sql`). Every page flow was also tested end-to-end in a browser on Tomcat 11.
