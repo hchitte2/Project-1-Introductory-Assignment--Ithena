@@ -259,3 +259,5 @@ I've set up these Claude Code skills (from [Matt Pocock's open-source collection
 | `/handoff` | Summarizing a session so I can pick the work up the next day |
 | `/to-questionnaire` | Turning open questions into a short questionnaire for the person who can answer them |
 | `/wait-what` | Getting an explanation re-pitched in plain language when it doesn't land |
+
+My lessons and learning records are public: [learning-with-claude](https://github.com/hchitte2/learning-with-claude).
