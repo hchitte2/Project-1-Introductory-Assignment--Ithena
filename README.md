@@ -53,6 +53,15 @@ Deliverable: [Project_2_Common_KPIs/Common_KPIs.md](Project_2_Common_KPIs/Common
 
 * **Task 3:** Document the middleware tools and their corresponding providers.
 
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Identify the 5 main DBMS providers | 0.5 hr | — | |
+| 2 | Research the middleware associated with each provider | 2 hrs | Task 1 | |
+| 3 | Document middleware by provider and review | 1 hr | Task 2 | |
+| | **Total** | **3.5 hrs** | | |
+
+Deliverable: [Project_3_DBMS_Middleware/DBMS_Middleware.md](Project_3_DBMS_Middleware/DBMS_Middleware.md)
+
 ## Project Four: Internet of Things (IoT)
 
 * **Task 1:** Write a clear definition of IoT.
