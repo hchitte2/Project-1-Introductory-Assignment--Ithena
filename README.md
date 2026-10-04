@@ -168,6 +168,18 @@ Deliverable: [Project_6_Requirements_Gathering/Requirements_Gathering.md](Projec
 
 * **Task 4:** Analyze the provided situation (10 devices, 1M rows/day) and determine the minimum hardware requirements, recommended cluster size, cost, dashboard setup, and scalability limits.
 
+| # | Task | Estimated time | Depends on | Actual time |
+|---|------|----------------|------------|-------------|
+| 1 | Define Big Data | 0.5 hr | — | |
+| 2 | List 5 vendors and their Big Data products | 1 hr | — | |
+| 3 | Compare 3 platforms (hardware, database, ETL, front end) | 2 hrs | Task 2 | |
+| 4 | Write two detailed use cases | 1 hr | Task 1 | |
+| 5 | Analyze the situation: sizing, cost, dashboards, scaling | 2 hrs | Task 3 | |
+| 6 | Compile and review | 0.5 hr | Tasks 1–5 | |
+| | **Total** | **7 hrs** | | |
+
+Deliverable: [Project_7_Big_Data/Big_Data.md](Project_7_Big_Data/Big_Data.md)
+
 
 
 ## Project Eight: API
