@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather now</title>
+  <meta name="description" content="Current temperature for any city, from the OpenWeatherMap API.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='12' y='3' width='8' height='20' rx='4' fill='%23cfd9e1'/%3E%3Crect x='14' y='10' width='4' height='14' fill='%23c9412f'/%3E%3Ccircle cx='16' cy='24' r='6' fill='%23c9412f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;800&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Weather now</h1>
+      <p class="lede">Current temperature for any city, from OpenWeatherMap.</p>
+    </header>
+
+    <form id="search" class="search" autocomplete="off">
+      <label for="city">City</label>
+      <div class="search-row">
+        <input id="city" name="city" type="text" placeholder="e.g. London or Paris, FR" maxlength="100" required>
+        <button type="submit">Get temperature</button>
+      </div>
+    </form>
+
+    <section id="result" class="result" aria-live="polite">
+      <p class="empty">Search for a city to see its current temperature.</p>
+    </section>
+  </main>
+
+  <template id="reading-template">
+    <article class="reading">
+      <div class="thermometer" aria-hidden="true"><div class="mercury"></div></div>
+      <div class="details">
+        <h2 class="place"></h2>
+        <p class="temp"><span class="value"></span><span class="unit">°C</span></p>
+        <p class="summary"></p>
+        <dl class="facts">
+          <div><dt>Range across the city</dt><dd class="range"></dd></div>
+          <div><dt>Humidity</dt><dd class="humidity"></dd></div>
+          <div><dt>Wind</dt><dd class="wind"></dd></div>
+        </dl>
+        <p class="observed"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
