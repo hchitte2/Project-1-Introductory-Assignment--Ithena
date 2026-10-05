@@ -20,7 +20,7 @@ A JSP login application running on Apache Tomcat. Users register (with a photo),
 | 6 | Landing page (date, welcome, photo) and logout | 1.5 hrs | Task 3 | |
 | 7 | Errors, confirmations, and a consistent theme across all pages | 2 hrs | Tasks 3–6 | |
 | 8 | Tests, README, and review | 1.5 hrs | Tasks 3–7 | |
-| | **Total** | **13.5 hrs** | | |
+| | **Total** | **13.5 hrs** | | **2.5 hrs** |
 
 ## Requirements Checklist
 

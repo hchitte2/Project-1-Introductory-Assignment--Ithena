@@ -12,7 +12,7 @@
 | 6 | Build the backend that calls OpenWeatherMap | 1.5 hrs | Task 5 | |
 | 7 | Build the web page that shows the result | 1 hr | Task 6 | |
 | 8 | Tests, README, and review | 1 hr | Tasks 6, 7 | |
-| | **Total** | **5.75 hrs** | | |
+| | **Total** | **5.75 hrs** | | **1.5 hrs** |
 
 Start Task 5 first so the key is active by the time the backend is ready.
 
